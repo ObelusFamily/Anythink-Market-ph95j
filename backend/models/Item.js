@@ -8,7 +8,7 @@ var ItemSchema = new mongoose.Schema(
     slug: { type: String, lowercase: true, unique: true },
     title: String,
     description: String,
-    image: String,
+    image: { type: String, default: "https://static.productionready.io/images/smiley-cyrus.jpg" },
     favoritesCount: { type: Number, default: 0 },
     comments: [{ type: mongoose.Schema.Types.ObjectId, ref: "Comment" }],
     tagList: [{ type: String }],
