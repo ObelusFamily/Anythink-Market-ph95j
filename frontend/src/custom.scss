@@ -59,3 +59,10 @@ body {
 .user-info {
   min-width: 800px;
 }
+
+// profile page width should not exceed mobile client's width (expected <= 414)
+@media (max-width: 414px) {
+  .user-info {
+    min-width: 100%;
+  }
+}

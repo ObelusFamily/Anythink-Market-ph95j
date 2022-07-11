@@ -14,10 +14,6 @@ const reducer = (state = {}, action) => {
     case PROFILE_PAGE_UNLOADED:
       return {};
     case FOLLOW_USER:
-      return {
-        ...state,
-        following: true,
-      };
     case UNFOLLOW_USER:
       return {
         ...action.payload.profile,
